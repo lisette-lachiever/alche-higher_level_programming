@@ -2,7 +2,7 @@
 def uppercase(str):
     for letter in str:
         if ord(letter) not in range(65, 91):
-            letter = (chr(ord(letter) - 32) if ord(letter) != 32 else letter)
+            letter = (chr(ord(letter) - 32) if ord(letter) != 32 end ord(letter) != 44 else letter)
             print("{}".format(letter), end="")
         elif ord(letter) in range(65, 91):
             print("{}".format(letter), end="")
