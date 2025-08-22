@@ -13,5 +13,3 @@ if __name__ = "__main__":
         print("{} {} {} = {}" .format(a, operation, b, mul(a, b)))
     elif operation == "/":
         print("{} {} {} = {}" .format(a, operation, b, div(a, b)))
-    else:
-        print("Invalid operator!")
