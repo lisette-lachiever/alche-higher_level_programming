@@ -1,8 +1,10 @@
 #!/usr/bin/python3
-def add_0(a, b):
+if __name__ == "__main__":
+
+    from 0_add import add
+    def add(a, b):
     return a+b
 
 a=1
 b=2
-if __name__ == "__main__":
-    print("{} + {} = " .format(a, b), add_0(a, b))
+    print("{} + {} = " .format(a, b), add(a, b))
