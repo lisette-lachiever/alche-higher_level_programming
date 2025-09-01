@@ -2,10 +2,11 @@
 def safe_print_list(my_list=[], x=0):
     n = 0
     try:
-        for element in  range(x):
-            print(f"{my_list[element]}",end="")
+        for element in range(x):
+            print(f"{my_list[element]}", end="")
             n = n+1
 
     except IndexError:
         print("\nIndex out of range")
-    return f"\n {n}"
+    print()
+    return n
