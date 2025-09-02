@@ -1,10 +1,15 @@
 #!/usr/bin/python3
 def safe_print_list_integers(my_list=[], x=0):
+    n = 0
     try:
-        for items in my_list:
-            if type(items) is str:
+        for i in range(x):
+            if type(my_list[i]) is str:
                 continue
-            print("{:d}".format(items), end=" ")
+            else:
+                print("{:d}".format(my_list[i]), end="")
+            n = n + 1
         return True
-    except (TypeError, ValueError):
+    except (TypeError, ValueError, IndexError):
        pass
+    print()
+    return n
