@@ -4,5 +4,5 @@
 
 class Square:
     """Private class attribute instantiation"""
-    def __init__(self, _square__size):
-        self._square__size = _square__size
+    def __init__(self, size):
+        self._square__size = size
