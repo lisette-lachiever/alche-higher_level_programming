@@ -3,6 +3,7 @@
 
 
 def read_file(filename=""):
-    """Using with statement to open in reading mode"""
+    """Using with statement to open file in reading mode"""
     with open(filename, 'r') as f:
-            print(f.read())
+            print(f.read(), end="")
+read_file("essay1.txt")
